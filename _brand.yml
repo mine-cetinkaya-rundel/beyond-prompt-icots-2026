@@ -1,0 +1,36 @@
+color:
+  palette:
+    cloud-dancer: "#F0EEE9"
+    blue-fusion: "#496275"
+    baltic-sea: "#7AB6D9"
+    watermelon: "#ED254E"
+    lime-moss: "#8FB339"
+  background: cloud-dancer
+  foreground: blue-fusion
+  primary: blue-fusion
+  secondary: baltic-sea
+  info: baltic-sea
+  success: lime-moss
+  danger: watermelon
+  # watermelon on the light cloud-dancer background clears WCAG AA (3.64:1) at
+  # heading/link sizes; foreground blue-fusion is used for body text (5.51:1)
+  link: watermelon
+
+typography:
+  fonts:
+    - family: Fira Sans
+      source: google
+      weight: [400, 500, 600, 700]
+    - family: Fira Code
+      source: google
+      weight: [400, 500]
+  base:
+    family: Fira Sans
+  headings:
+    family: Fira Sans
+    weight: 700
+    color: blue-fusion
+  monospace:
+    family: Fira Code
+  link:
+    color: watermelon

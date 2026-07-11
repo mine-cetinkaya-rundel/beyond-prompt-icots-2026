@@ -1,0 +1,21 @@
+/*-- scss:rules --*/
+
+// Progress bar and outline/menu accents in Lime Moss (rather than the link color)
+.reveal .progress {
+  color: #8FB339;
+}
+
+.reveal .slide-menu-wrapper .slide-menu-item.active,
+.reveal .slide-menu-wrapper .slide-menu-item:hover {
+  color: #8FB339;
+}
+
+// The hamburger icon is drawn as an SVG background-image with the fill color
+// (watermelon) baked in, so recolor it by supplying a lime-moss SVG.
+.reveal .slide-menu-button .fa-bars::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(143, 179, 57)" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>') !important;
+}
+
+.reveal .slide-menu-wrapper .slide-menu-item.selected {
+  border-left: 3px solid #8FB339;
+}
